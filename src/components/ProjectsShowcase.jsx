@@ -4,7 +4,7 @@ import { Volume2, VolumeX } from "lucide-react"; // icons for mute/unmute
 
 // Replace with your actual video imports
 import vid1 from "../assets/img/vid/BikersCafe_reel.mp4";
-import vid2 from "../assets/img/vid/Embark_college_by_golcha_group.mp4";
+import vid2 from "../assets/img/vid/Embark_College_by_golcha_group.mp4";
 import vid3 from "../assets/img/vid/Manipal_International_hospital.mp4";
 
 
