@@ -1,9 +1,14 @@
 import React from "react";
 import { ChevronDown } from "lucide-react";
-import { Link } from "react-router-dom"; // ✅ use React Router Link
+import { Link } from "react-router-dom"; // ✅ for navigation
 import { HashLink } from "react-router-hash-link"; // ✅ for smooth scrolling
-import { navItems } from "../constants";
+
 const Footer = () => {
+  // scroll to top for page navigation
+  const handlePageNav = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" }); // 👈 smooth scroll to top
+  };
+
   return (
     <footer className="bg-[#0b1315] text-[#FFFDD0] py-10 px-6 md:px-16">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
@@ -22,13 +27,13 @@ const Footer = () => {
         </div>
 
         {/* Right Side Contact Details */}
-        <div className="text-lg text-center md:text-right space-y-2 ">
+        <div className="text-lg text-center md:text-right space-y-2">
           <p>
             <span className="tracking-tight font-bold text-[#FFFDD0]">
-                <span className="text-[#0b1399]">Trip</span>{" "}
-                <span className="text-[#990000]">Engineering </span>
-              </span>
-             Pvt. Ltd., Tinkune, Kathmandu, Bagmati Province No. 01, Nepal - 4440000
+              <span className="text-[#0b1399]">Trip</span>{" "}
+              <span className="text-[#990000]">Engineering </span>
+            </span>
+            Pvt. Ltd., Tinkune, Kathmandu, Bagmati Province No. 01, Nepal - 4440000
           </p>
           <p>
             <a
@@ -37,36 +42,35 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              www.tripengineerings.com,
-              +977 9824297120
+              www.tripengineerings.com, +977 9824297120
             </a>
           </p>
 
           {/* Quick Links */}
           <div className="flex justify-center md:justify-end gap-4 font-semibold flex-wrap">
-            {/* Home → navigate to `/` and scroll smoothly */}
-            <HashLink smooth to="/#home" className="hover:text-white">
+            {/* Home → navigate to `/` and scroll top */}
+            <Link to="/" onClick={handlePageNav} className="hover:text-white">
               Home
-            </HashLink>
+            </Link>
             |
-            <Link to="/about" className="hover:text-white">
+            <Link to="/about" onClick={handlePageNav} className="hover:text-white">
               About Us
             </Link>
             |
-            <Link to="/services" className="hover:text-white">
+            <Link to="/services" onClick={handlePageNav} className="hover:text-white">
               Services
             </Link>
             |
-            <Link to="/projects" className="hover:text-white">
+            <Link to="/projects" onClick={handlePageNav} className="hover:text-white">
               Projects
             </Link>
             |
-            <Link to="/careers" className="hover:text-white">
+            <Link to="/careers" onClick={handlePageNav} className="hover:text-white">
               Careers
             </Link>
             |
-            {/* Contact section on homepage */}
-            <HashLink smooth to="/#contact" className="flex items-center">
+            {/* Contact section → smooth scroll */}
+            <HashLink smooth to="/#contact" className="flex items-center hover:text-white">
               Contact Us
               <ChevronDown className="ml-1 w-4 h-4" />
             </HashLink>

@@ -54,7 +54,7 @@ const TrustedBy = () => {
         <motion.div
           className="flex gap-[130px] items-center"
           animate={{ x: ["0%", "-100%"] }}
-          transition={{ repeat: Infinity, duration: 40, ease: "linear" }}
+          transition={{ repeat: Infinity, duration: 60, ease: "linear" }}
         >
           {[...logos, ...logos].map((logo, idx) => (
             <img
@@ -70,7 +70,7 @@ const TrustedBy = () => {
         <motion.div
           className="flex gap-[130px] items-center"
           animate={{ x: ["-100%", "0%"] }}
-          transition={{ repeat: Infinity, duration: 40, ease: "linear" }}
+          transition={{ repeat: Infinity, duration: 60, ease: "linear" }}
         >
           {[...logos, ...logos].map((logo, idx) => (
             <img

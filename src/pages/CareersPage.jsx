@@ -44,14 +44,26 @@ const CareersSection = () => {
 
   const handleApply = (jobTitle) => {
     const subject = `Application for ${jobTitle}`;
-    const body = `Dear HR Team,\n\nI would like to apply for the position of ${jobTitle} at Trip Engineering Pvt. Ltd.\n\nPlease find my resume and cover letter attached.\n\nBest regards,\n[Your Name]\n[Your Contact Info]`;
+    const body = `Dear HR Team,%0D%0A%0D%0A
+I would like to apply for the position of ${jobTitle} at Trip Engineering Pvt. Ltd.%0D%0A%0D%0A
+Please find my resume and cover letter attached.%0D%0A%0D%0A
+Best regards,%0D%0A[Your Name]%0D%0A[Your Contact Info]`;
 
-    // ✅ Open Gmail compose window in a new tab
-    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
-      hrEmail
-    )}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    // ✅ Detect mobile device
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-    window.open(gmailUrl, "_blank");
+    if (isMobile) {
+      // Open phone's email app
+      window.location.href = `mailto:${hrEmail}?subject=${encodeURIComponent(
+        subject
+      )}&body=${body}`;
+    } else {
+      // Open Gmail web compose
+      const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(
+        hrEmail
+      )}&su=${encodeURIComponent(subject)}&body=${body}`;
+      window.open(gmailUrl, "_blank");
+    }
   };
 
   return (
@@ -60,27 +72,29 @@ const CareersSection = () => {
       <HeroSection />
       <ChatBot />
 
-      <section className="py-20 px-6 text-[#FFFDD0] bg-[#0b1320]">
-        <h1 className="text-4xl font-bold mb-10 text-[#FFFDD0] text-center">Careers</h1>
-        <p className="max-w-3xl mx-auto text-lg leading-relaxed text-center mb-16">
+      <section className="py-16 px-6 text-[#FFFDD0] bg-[#0b1320]">
+        <h1 className="text-4xl font-bold mb-10 text-[#FFFDD0] text-center">
+          Careers
+        </h1>
+        <p className="max-w-2xl mx-auto text-lg leading-relaxed text-center mb-12">
           At Trip Engineering Pvt. Ltd., we welcome passionate individuals to join our dynamic team.
         </p>
 
-        {/* Job Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+        {/* Job List View */}
+        <div className="space-y-8 max-w-4xl mx-auto">
           {jobs.map((job, index) => (
             <div
               key={`${job.title}-${index}`}
-              className="bg-[#112240] p-6 rounded-lg shadow-lg flex flex-col justify-between"
+              className="bg-[#112240] p-6 rounded-lg shadow-lg flex flex-col space-y-4"
             >
-              <h2 className="text-2xl font-semibold mb-4">{job.title}</h2>
-              <ul className="list-disc list-inside mb-6 space-y-1">
+              <h2 className="text-2xl font-semibold">{job.title}</h2>
+              <ul className="list-disc list-inside space-y-1">
                 {job.requirements.map((req, idx) => (
                   <li key={idx}>{req}</li>
                 ))}
               </ul>
               <button
-                className="bg-yellow-400 text-[#001f3f] font-bold py-2 px-4 rounded hover:bg-yellow-300 transition"
+                className="self-start bg-yellow-400 text-[#001f3f] font-bold py-2 px-5 rounded hover:bg-yellow-300 transition text-center w-full sm:w-auto"
                 onClick={() => handleApply(job.title)}
               >
                 Apply Now

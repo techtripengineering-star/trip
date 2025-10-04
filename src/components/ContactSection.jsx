@@ -97,9 +97,9 @@ const ContactSection = () => {
             <br />
           </p>
           <div className="flex-1 flex flex-col items-end text-right pr-2 space-y-3">
-            <p className="text-2xl">📍 Kathmandu, Nepal - 4440000</p>
-            <p className="text-2xl">📞 +977 9824297120</p>
-            <p className="text-2xl">✉️ projects.tripepl@gmail.com</p>
+            <p className="text-2xl"> Kathmandu, Nepal - 4440000</p>
+            <p className="text-2xl"> +977 9824297120</p>
+            <p className="text-2xl"> projects.tripepl@gmail.com</p>
           </div>
 
           {/* Google Maps Embed */}
