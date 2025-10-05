@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -23,12 +24,12 @@ const AboutUs = () => {
 
       {/* Read More */}
       <div className="mt-10">
-        <a
-          href="/about"
+        <Link 
+          to="/about" 
           className="text-lg font-medium tracking-wide border-b border-white hover:text-gray-300 hover:border-gray-300 transition"
         >
           READ MORE
-        </a>
+        </Link>
       </div>
     </section>
   );

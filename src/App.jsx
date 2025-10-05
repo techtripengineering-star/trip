@@ -14,6 +14,8 @@ import Aproach from "./components/Aproach";
 import TrustedBy from "./components/TrustedBy";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 // Pages
 import AboutPage from "./pages/AboutPage";
@@ -24,6 +26,7 @@ import CareersPage from "./pages/CareersPage";
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         {/* Landing Page */}
         <Route
