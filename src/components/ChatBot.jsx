@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Send } from "lucide-react";
 import emailjs from "@emailjs/browser";
+import pupup from "../assets/img/pupup.gif";
+
 
 export default function ChatBot() {
   const [visible, setVisible] = useState(false);
@@ -121,7 +123,7 @@ export default function ChatBot() {
           onClick={() => setOpen(true)}
           className="bg-blue-500 p-3 rounded-full shadow-lg flex items-center space-x-2 hover:bg-blue-600 transition transform animate-bounce-slow"
         >
-          <img src="/src/assets/img/pupup.gif" alt="pup" className="w-8 h-8" />
+          <img src={pupup} alt="pup" className="w-8 h-8" />
           <span className="text-white font-semibold">Hi! Need Help?</span>
         </button>
       )}
@@ -138,7 +140,7 @@ export default function ChatBot() {
           <div className="flex-1 p-3 overflow-y-auto space-y-2">
             <div className="flex items-center space-x-2">
               <img
-                src="/src/assets/img/pupup.gif"
+                src={pupup}
                 alt="AI Girl"
                 className="w-10 h-10 rounded-full border"
               />
