@@ -1,4 +1,5 @@
 import React from "react";
+import service1 from "../assets/img/service1.jpeg";
 
 const services = [
   { title: "Electrical Engineering & Design", desc: "Comprehensive solutions for electrical layouts and safety compliance." },
@@ -29,7 +30,7 @@ const Services = () => {
         {/* Left: Image Frame (keeps natural size) */}
         <div className="relative w-full h-full overflow-hidden rounded-lg shadow-lg group">
           <img
-            src="\src\assets\img\service1.jpeg" // 🔥 Replace with your own image
+            src={service1} // 🔥 Replace with your own image
             alt="Engineering Services"
             className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
           />
