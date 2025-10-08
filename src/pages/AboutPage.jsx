@@ -45,25 +45,30 @@ const AboutPage = () => {
             <div className="md:w-1/2 flex flex-col justify-center space-y-6 text-justify">
               <h3 className="text-3xl font-semibold text-[#DC143C]">Who We Are</h3>
               <p className="text-base md:text-xl leading-relaxed">
-                <span className="font-semibold">Trip Engineering Pvt. Ltd.</span> is a
-                dynamic and performance-driven engineering company specializing in{" "}
+                <span className="font-semibold">Trip Engineering Pvt. Ltd.</span> is a forward-thinking, performance-oriented engineering company specializing in{" "}
                 <span className="font-semibold">
-                  Electrical, Electronics, MEP (Mechanical, Electrical, and Plumbing),
-                  Software, and AI Solutions
+                  HVAC (Heating, Ventilation, and Air Conditioning), Electrical, Electronics, Plumbing & Sanitary, along with Fire-Fighting and Fire Suppression Systems
                 </span>
-                . Since our inception, we have worked to redefine engineering excellence
-                with innovative, reliable, and cost-effective services.
+                . Together, Trip Engineering offers complete{" "}
+                <span className="font-semibold">MEPF (Mechanical, Electrical, Plumbing, and Fire-Fighting)</span> solutions.
               </p>
+
               <p className="text-base md:text-xl leading-relaxed">
-                Over the years, our team has successfully executed a diverse portfolio of
-                projects across Nepal, ranging from government institutions, hospitals,
-                and universities to industrial complexes, commercial spaces, and modern
-                residential infrastructures. Each project comes with its own challenges,
-                and our ability to adapt strategies, innovate designs, and apply the
-                latest technologies has consistently allowed us to deliver results that
-                exceed expectations.
+                In addition to its core engineering expertise, Trip Engineering has expanded into the{" "}
+                <span className="font-semibold">Software and Digital Solutions</span> domain — providing cutting-edge services in{" "}
+                <span className="font-semibold">Web Development, Software Development, and Technology Integration</span>. Our software division focuses on creating{" "}
+                <span className="font-semibold">custom digital solutions</span> that enhance operational efficiency, enable data-driven decision-making, and support business transformation across industries.
+              </p>
+
+              <p className="text-base md:text-xl leading-relaxed">
+                From enterprise software applications and automation systems to modern, responsive websites and cloud-based solutions, Trip Engineering delivers technology that empowers businesses to thrive in the digital era.
+              </p>
+
+              <p className="text-base md:text-xl leading-relaxed">
+                Since its establishment, the company has remained dedicated to setting new benchmarks in engineering and technology excellence through innovative approaches, reliable systems, and cost-efficient services.
               </p>
             </div>
+
 
             {/* Image Right */}
             <div className="md:w-1/2">

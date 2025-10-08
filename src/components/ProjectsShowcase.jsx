@@ -21,23 +21,23 @@ const ProjectsShowcase = () => {
     {
       id: 1,
       title: "BIKERS CAFE",
-      category: "Comercial Building",
+      category: "Showroom Cum Cafe",
       video: vid1,
-      location: "Pulchowk, Lalitpur" 
+      location: "Narayanchaur, Naxal, Kathmandu" 
     },
     {
       id: 2,
-      title: "EMBARK COLLEGE OF GOLCHA GROUP",
+      title: "EMBARK COLLEGE",
       category: "Educational Building",
       video: vid2,
-      location:"Narayanchaur, Naxal, Kathmandu"
+      location:"Pulchowk, Lalitpur"
     },
     {
       id: 3,
       title: "MANIPAL INTERNATIONAL HOSPITAL",
       category: "Institutional Building",
       video: vid3,
-      location: "Narayan Chaur, Kathmandu"
+      location: "Pokhara, Nepal"
     },
   ];
 

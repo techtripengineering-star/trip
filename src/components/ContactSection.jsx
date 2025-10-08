@@ -85,7 +85,7 @@ const ContactSection = () => {
 
       <div className="flex flex-col md:flex-row items-start md:items-stretch justify-between gap-12">
         {/* Location Section (Right-to-Left Alignment) */}
-        <div className="flex-1 flex flex-col items-end text-right pr-6 space-y-4">
+        <div className="flex-1 flex flex-col items-end text-right pr-2 space-y-3">
           <h3 className="text-3xl font-semibold">Our Location</h3>
 
           <p className="leading-relaxed">
@@ -97,9 +97,9 @@ const ContactSection = () => {
             <br />
           </p>
           <div className="flex-1 flex flex-col items-end text-right pr-2 space-y-3">
-            <p className="text-2xl"> Kathmandu, Nepal - 4440000</p>
-            <p className="text-2xl"> +977 9824297120</p>
-            <p className="text-2xl"> projects.tripepl@gmail.com</p>
+            <p className="text-2xl"> Mahalaxmi Municipality-06</p>
+            <p className="text-2xl"> Siddipur, Lalitpur  PO box no : 44600</p>
+            <p className="text-2xl"> projects.tripepl@gmail.com | +977 9824297120</p>
           </div>
 
           {/* Google Maps Embed */}

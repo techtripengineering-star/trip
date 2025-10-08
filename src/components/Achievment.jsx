@@ -4,9 +4,9 @@ import { useInView } from "react-intersection-observer";
 
 const achievements = [
   { value: 5, suffix: "+", label: "Years Of Experience" },
-  { value: 20, suffix: "+", label: "Professionals In-House" },
+  { value: 10, suffix: "+", label: "Professionals In-House" },
   { value: 15, suffix: "+", label: "Projects Completed" },
-  { value: 50, suffix: "+", label: "Thousands Sq.Ft Delivered" },
+  { value: 500, suffix: "+", label: "Thousands Sq.Ft Delivered" },
 ];
 
 const Achievements = () => {

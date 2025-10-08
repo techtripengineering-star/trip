@@ -1,8 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom"; // ✅ Import navigation hook
 import showcaseImg from "../assets/img/hall123.jpg"; // adjust path if needed
 
 const Aproach = () => {
+  const navigate = useNavigate(); // ✅ Initialize navigation
+
+  const handleExploreClick = () => {
+    navigate("/projects"); // ✅ Redirect to your Project Page route
+  };
+
   return (
     <section className="relative w-full bg-[#0b1320] text-[#FFFDD0] py-16 px-6 md:px-12 lg:px-20 overflow-hidden">
       {/* Heading */}
@@ -34,11 +41,14 @@ const Aproach = () => {
 
         {/* Overlay text bottom-left */}
         <div className="absolute bottom-6 left-6 text-sm md:text-base font-semibold tracking-wide">
-          GOLCHA GROUP
+          MANIPAL INTERNATIONAL HOSPITAL VIP CABIN
         </div>
 
         {/* Explore link bottom-right */}
-        <div className="absolute bottom-6 right-6 text-sm md:text-base uppercase font-medium flex items-center gap-2 cursor-pointer hover:underline">
+        <div
+          onClick={handleExploreClick}
+          className="absolute bottom-6 right-6 text-sm md:text-base uppercase font-medium flex items-center gap-2 cursor-pointer hover:underline hover:text-[#DC143C] transition-colors duration-300"
+        >
           Explore <span className="ml-1">&gt;&gt;&gt;</span>
         </div>
       </motion.div>
@@ -46,4 +56,4 @@ const Aproach = () => {
   );
 };
 
-export default Aproach;  // 👈 this is required
+export default Aproach;

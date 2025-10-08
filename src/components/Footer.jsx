@@ -33,7 +33,7 @@ const Footer = () => {
               <span className="text-[#0b1399]">Trip</span>{" "}
               <span className="text-[#990000]">Engineering </span>
             </span>
-            Pvt. Ltd., Tinkune, Kathmandu, Bagmati Province No. 01, Nepal - 4440000
+            Pvt. Ltd., Mahalaxmi Municipality-06, Siddipur, Lalitpur, PO box no : 44600
           </p>
           <p>
             <a
@@ -42,8 +42,9 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              www.tripengineerings.com, +977 9824297120
-            </a>
+              www.tripengineerings.com 
+            </a>{" "}
+            | +977 9824297120
           </p>
 
           {/* Quick Links */}

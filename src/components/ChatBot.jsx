@@ -64,7 +64,7 @@ export default function ChatBot() {
       }
       setFormData((prev) => ({ ...prev, name: input }));
       sendBotReply(
-        `Thanks, ${input}! 📞 Please provide your phone number with country code (e.g., +919876543210).`
+        `Thanks, ${input}! 📞 Please provide your phone number with country code (e.g., +977-9876543210).`
       );
       setStep(3);
     } else if (step === 3) {

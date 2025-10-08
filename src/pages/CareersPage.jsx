@@ -6,35 +6,13 @@ import ChatBot from "../components/ChatBot";
 
 const jobs = [
   {
-    title: "Civil Engineer",
+    title: "Electrical Draft Person / Electrical Design Engineer",
     requirements: [
-      "Bachelor's degree in Civil Engineering",
-      "2+ years experience in construction projects",
-      "Strong knowledge of CAD and project management tools",
-    ],
-  },
-  {
-    title: "Mechanical Engineer",
-    requirements: [
-      "Bachelor's degree in Mechanical Engineering",
-      "Experience with machinery design and maintenance",
-      "Proficient in CAD software and simulations",
-    ],
-  },
-  {
-    title: "Project Manager",
-    requirements: [
-      "Bachelor's degree in Engineering or Management",
-      "3+ years project management experience",
-      "Excellent leadership and communication skills",
-    ],
-  },
-  {
-    title: "AI Developer",
-    requirements: [
-      "Bachelor's degree in Engineering or Management",
-      "3+ years project management experience",
-      "Excellent leadership and communication skills",
+      "Diploma or Bachelor's degree in Electrical Engineering or related field",
+      "Proficiency in AutoCAD and electrical design software",
+      "Strong understanding of electrical drawings, layouts, and load calculations",
+      "Ability to prepare detailed design documents and BOQs",
+      "Prior experience in MEPF or building services projects preferred",
     ],
   },
 ];
