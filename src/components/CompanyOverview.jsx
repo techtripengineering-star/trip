@@ -34,53 +34,70 @@ const CompanyOverview = () => {
           <div className="space-y-6 text-justify text-base md:text-xl leading-relaxed">
             <p>
               <span className="font-semibold">Trip Engineering Pvt. Ltd.</span> is a
-              dynamic and performance-driven engineering company specializing in{" "}
+              forward-thinking, performance-oriented engineering company specializing in{" "}
               <span className="font-semibold">
-                Electrical, Electronics, and MEP (Mechanical, Electrical, and Plumbing)
+                HVAC (Heating, Ventilation, and Air Conditioning), Electrical, Electronics,
+                Plumbing & Sanitary, along with Fire-Fighting and Fire Suppression Systems.
               </span>{" "}
-              solutions. Since our inception, we have worked to redefine engineering
-              excellence with innovative, reliable, and cost-effective services.
+              Together, Trip Engineering offers complete MEPF (Mechanical, Electrical,
+              Plumbing, and Fire-Fighting) solutions. Since our inception, we have worked to
+              redefine engineering excellence with innovative, reliable, and cost-effective
+              services.
             </p>
 
             <p>
               Over the years, our team has successfully executed a diverse portfolio of
-              projects across Nepal, ranging from government institutions, hospitals,
-              and universities to industrial complexes, commercial spaces, and modern
-              residential infrastructures. Each project comes with its own unique
-              challenges, and our ability to adapt strategies, innovate designs, and
-              apply the latest technologies has consistently allowed us to deliver
-              results that exceed expectations. From critical electrical systems in
-              healthcare facilities to large-scale industrial automation setups, and
-              from campus-wide energy-efficient lighting solutions to smart residential
-              complexes, we have left a mark of quality and dependability in every
-              sector we serve.
+              projects across Nepal, ranging from government institutions, hospitals, and
+              universities to industrial complexes, commercial spaces, and modern residential
+              infrastructures. Each project comes with its own unique challenges, and our
+              ability to adapt strategies, innovate designs, and apply the latest technologies
+              has consistently allowed us to deliver results that exceed expectations. From
+              critical electrical systems in healthcare facilities to large-scale industrial
+              automation setups, and from campus-wide energy-efficient lighting solutions to
+              smart residential complexes, we have left a mark of quality and dependability in
+              every sector we serve.
             </p>
 
             <p>
-              We pride ourselves on precision engineering, uncompromising quality
-              standards, and timely delivery of every project. At Trip Engineering,
-              safety is not an afterthought but a core principle—all activities are
-              carried out under strict safety protocols aligned with international
-              engineering standards. Our work methodology is built on detailed planning,
-              rigorous testing, and transparent communication with stakeholders. This
-              approach has enabled us to earn the trust of government bodies,
-              multinational corporations, architects, contractors, and private
-              developers, making us the go-to choice for engineering and MEP solutions
-              in Nepal.
+              In addition to its core engineering expertise,{" "}
+              <span className="font-semibold">Trip Engineering</span> has expanded into the{" "}
+              <span className="font-semibold">Software and Digital Solutions</span> domain —
+              providing cutting-edge services in Web Development, Software Development, and
+              Technology Integration. Our software division focuses on creating custom digital
+              solutions that enhance operational efficiency, enable data-driven decision-making,
+              and support business transformation across industries.
             </p>
 
             <p>
-              Looking ahead, our mission is clear: to continue driving innovation,
-              embracing sustainable and green technologies, and delivering value-driven
-              engineering solutions that not only support Nepal’s rapid infrastructure
-              development but also positively impact communities for generations to
-              come. We envision becoming a leader in sustainable engineering practices,
-              integrating renewable energy solutions, smart building technologies, and
-              eco-friendly materials into our projects. With every step, we strive to
-              contribute toward a future that is technologically advanced,
-              environmentally responsible, and socially inclusive.
+              From enterprise software applications and automation systems to modern,
+              responsive websites and cloud-based solutions, Trip Engineering delivers
+              technology that empowers businesses to thrive in the digital era.
+            </p>
+
+            <p>
+              We pride ourselves on precision engineering, uncompromising quality standards,
+              and timely delivery of every project. At Trip Engineering, safety is not an
+              afterthought but a core principle—all activities are carried out under strict
+              safety protocols aligned with international engineering standards. Our work
+              methodology is built on detailed planning, rigorous testing, and transparent
+              communication with stakeholders. This approach has enabled us to earn the trust
+              of government bodies, multinational corporations, architects, contractors, and
+              private developers, making us the go-to choice for engineering, MEP, and
+              software-based solutions in Nepal.
+            </p>
+
+            <p>
+              Looking ahead, our mission is clear: to continue driving innovation, embracing
+              sustainable and green technologies, and delivering value-driven engineering and
+              digital solutions that not only support Nepal’s rapid infrastructure development
+              but also positively impact communities for generations to come. We envision
+              becoming a leader in sustainable engineering practices, integrating renewable
+              energy solutions, smart building technologies, and eco-friendly materials into
+              our projects. With every step, we strive to contribute toward a future that is
+              technologically advanced, environmentally responsible, and socially inclusive.
             </p>
           </div>
+
         </div>
 
 
