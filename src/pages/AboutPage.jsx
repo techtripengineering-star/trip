@@ -22,6 +22,8 @@ import project2 from "../assets/img/hall3.jpg";
 import teamLead from "../assets/img/Raushan.jpg";
 import techLead from "../assets/img/Prabhat.jpg";
 import Krishna from "../assets/img/krishna.png";
+import mission from "../assets/img/mission.png";
+import vission from "../assets/img/Vision.png";
 
 
 const AboutPage = () => {
@@ -324,7 +326,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-{/* New Tech Lead Section */}
+    {/* New Tech Lead Section */}
       <section className="py-20 px-6 bg-[#111827] text-[#FFFDD0]">
         <div className="max-w-[1750px] mx-auto space-y-12">
           <div className="flex flex-col md:flex-row items-stretch gap-8">
@@ -432,81 +434,118 @@ const AboutPage = () => {
 
       {/* Our Mission Section */}
       <section className="py-20 px-6 bg-[#0b1320] text-[#FFFDD0]">
-        <div className="max-w-[1750px] mx-auto space-y-12">
-          {/* Section Header */}
-          <h2 className="text-5xl font-bold text-[#FFFDD0] mb-10 text-center">
+        <div className="max-w-[1750px] mx-auto">
+
+          <h2 className="text-5xl font-bold text-[#FFFDD0] mb-14 text-center">
             Our Mission
           </h2>
 
-          <div className="text-base md:text-xl leading-relaxed text-justify space-y-6">
-            <p>
-              At <span className="font-semibold">Trip Engineering Pvt. Ltd.</span>, our mission is to 
-              engineer the future with innovation, precision, and responsibility. We are committed to 
-              delivering end-to-end engineering, digital, and infrastructure solutions that combine 
-              electrical, electronics, and MEP expertise with plumbing, sanitary, and fire-fighting 
-              systems. We also harness the power of software, AI, and data-driven solutions to optimize 
-              operations, empower businesses, and shape smarter environments.
-            </p>
+          <div className="flex flex-col md:flex-row items-center gap-12">
 
-            <p>
-              We strive to go beyond conventional engineering by adopting cutting-edge technologies such 
-              as Generative AI, IoT, and smart building systems while upholding international safety and 
-              quality standards. Our focus extends to building long-term partnerships with governments, 
-              industries, and communities, always prioritizing sustainability and green engineering 
-              practices to minimize environmental impact.
-            </p>
+            {/* IMAGE LEFT with SAME EFFECT */}
+            <div className="md:w-1/2 w-full">
+              <div className="relative w-full h-full overflow-hidden rounded-lg shadow-lg group">
+                <div className="transition-transform duration-1000 ease-in-out">
+                  <img
+                    src={mission}
+                    alt="Mission Image"
+                    className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
 
-            <p>
-              Ultimately, our mission is not only to execute projects but also to transform lives by 
-              integrating engineering excellence with digital intelligence, ensuring every solution we 
-              deliver drives progress, safety, and sustainable growth.
-            </p>
+                {/* Hover darker overlay */}
+                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
+              </div>
+            </div>
+
+            {/* TEXT RIGHT */}
+            <div className="md:w-1/2 w-full text-base md:text-xl leading-relaxed text-justify space-y-6">
+              <p>
+                At <span className="font-semibold">Trip Engineering Pvt. Ltd.</span>, our mission 
+                is to engineer the future with innovation, precision, and responsibility. We are 
+                committed to delivering end-to-end engineering, digital, and infrastructure solutions 
+                that combine electrical, electronics, and MEP expertise with plumbing, sanitary, and 
+                fire-fighting systems. We also harness the power of software, AI, and data-driven 
+                solutions to optimize operations, empower businesses, and shape smarter environments.
+              </p>
+
+              <p>
+                We strive to go beyond conventional engineering by adopting cutting-edge technologies 
+                such as Generative AI, IoT, and smart building systems while upholding international 
+                safety and quality standards. Our focus extends to building long-term partnerships with 
+                governments, industries, and communities, always prioritizing sustainability and green 
+                engineering practices to minimize environmental impact.
+              </p>
+
+              <p>
+                Ultimately, our mission is not only to execute projects but also to transform lives by 
+                integrating engineering excellence with digital intelligence, ensuring every solution 
+                we deliver drives progress, safety, and sustainable growth.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-
-      {/* Divider Line */}
 
       {/* Our Vision Section */}
       <section className="py-20 px-6 bg-[#111827] text-[#FFFDD0]">
-        <div className="max-w-[1750px] mx-auto space-y-12">
-          {/* Section Header */}
-          <h2 className="text-5xl font-bold text-[#FFFDD0] mb-10 text-center">
+        <div className="max-w-[1750px] mx-auto">
+
+          <h2 className="text-5xl font-bold text-[#FFFDD0] mb-14 text-center">
             Our Vision
           </h2>
 
-          <div className="text-base md:text-xl leading-relaxed text-justify space-y-6">
-            <p>
-              We envision <span className="font-semibold">Trip Engineering Pvt. Ltd.</span> as a regional 
-              leader and global contender in delivering holistic engineering and AI-powered solutions. 
-              Our vision is to revolutionize infrastructure in Nepal and beyond with smart, safe, and 
-              sustainable systems, while leading the convergence of engineering and digital innovation 
-              to make buildings smarter, industries more efficient, and cities more sustainable.
-            </p>
+          <div className="flex flex-col md:flex-row-reverse items-center gap-12">
 
-            <p>
-              By merging core civil and electrical engineering with artificial intelligence, machine 
-              learning, and automation, we aim to create future-ready talent and solutions that are both 
-              scalable and impactful. We aspire to be a trusted partner of choice for government bodies, 
-              hospitals, universities, industrial complexes, and global corporations.
-            </p>
+            {/* IMAGE RIGHT with SAME EFFECT */}
+            <div className="md:w-1/2 w-full">
+              <div className="relative w-full h-full overflow-hidden rounded-lg shadow-lg group">
+                <div className="transition-transform duration-1000 ease-in-out">
+                  <img
+                    src={vission}
+                    alt="Vision Image"
+                    className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
 
-            <p>
-              Above all, we are dedicated to continuous innovation in green and resilient engineering by 
-              integrating renewable energy, eco-friendly materials, and fire-safe designs. Through 
-              visionary leadership, technical mastery, and an unwavering commitment to safety, quality, 
-              and client success, we seek to inspire trust and excellence in everything we do.
-            </p>
+                {/* Hover darker overlay */}
+                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
+              </div>
+            </div>
 
-            <p>
-              Ultimately, our vision is to become a pioneering hub of sustainable engineering and AI 
-              transformation, shaping infrastructures, industries, and communities that thrive for 
-              generations to come.
-            </p>
+            {/* TEXT LEFT */}
+            <div className="md:w-1/2 w-full text-base md:text-xl leading-relaxed text-justify space-y-6">
+              <p>
+                We envision <span className="font-semibold">Trip Engineering Pvt. Ltd.</span> as a 
+                regional leader and global contender in delivering holistic engineering and AI-powered 
+                solutions. Our vision is to revolutionize infrastructure in Nepal and beyond with smart, 
+                safe, and sustainable systems, while leading the convergence of engineering and digital 
+                innovation to make buildings smarter, industries more efficient, and cities more sustainable.
+              </p>
+
+              <p>
+                By merging core civil and electrical engineering with artificial intelligence, machine 
+                learning, and automation, we aim to create future-ready talent and solutions that are 
+                both scalable and impactful. We aspire to be a trusted partner of choice for government 
+                bodies, hospitals, universities, industrial complexes, and global corporations.
+              </p>
+
+              <p>
+                Above all, we are dedicated to continuous innovation in green and resilient engineering by 
+                integrating renewable energy, eco-friendly materials, and fire-safe designs. Through 
+                visionary leadership, technical mastery, and an unwavering commitment to safety, quality, 
+                and client success, we seek to inspire trust and excellence in everything we do.
+              </p>
+
+              <p>
+                Ultimately, our vision is to become a pioneering hub of sustainable engineering and AI 
+                transformation, shaping infrastructures, industries, and communities that thrive for 
+                generations to come.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-
 
       <Footer />
     </>

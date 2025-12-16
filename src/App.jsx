@@ -23,6 +23,11 @@ import ServicesPage from "./pages/ServicesPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import CareersPage from "./pages/CareersPage";
 
+import AllRightsReserved from "./pages/AllRightsReserved";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsAndConditions from "./pages/TermsAndConditions";
+
+
 const App = () => {
   return (
     <Router>
@@ -58,6 +63,11 @@ const App = () => {
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/careers" element={<CareersPage />} />
+
+        {/* ✅ Legal Pages */}
+        <Route path="/all-rights-reserved" element={<AllRightsReserved />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
 
         {/* Redirect unknown paths */}
         <Route path="*" element={<Navigate to="/" />} />
