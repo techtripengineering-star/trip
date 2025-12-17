@@ -284,6 +284,7 @@ const AboutPage = () => {
                 <a
                   href="mailto:sahkrishna226@gmail.com"
                   className="p-2 rounded-full bg-[#222] hover:bg-[#D44638] transition-colors duration-300"
+                  aria-label="Send email"
                 >
                   <FaEnvelope className="text-xl text-white" />
                 </a>
@@ -294,12 +295,28 @@ const AboutPage = () => {
                   <FaPhone className="text-xl text-white" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/your-link" // Replace if he has LinkedIn
+                  href="https://www.linkedin.com/in/krishna-sah-181857160/" // Replace if he has LinkedIn
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full bg-[#222] hover:bg-[#0A66C2] transition-colors duration-300"
                 >
                   <FaLinkedinIn className="text-xl text-white" />
+                </a>
+                <a
+                  href="https://www.instagram.com/krishsah99"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full bg-[#222] hover:bg-[#E4405F] transition-colors duration-300"
+                >
+                  <FaInstagram className="text-xl text-white" />
+                </a>
+                <a
+                  href="https://www.facebook.com/krish.sah.96"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full bg-[#222] hover:bg-[#1877F2] transition-colors duration-300"
+                >
+                  <FaFacebookF className="text-xl text-white" />
                 </a>
               </div>
 
