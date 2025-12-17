@@ -199,14 +199,6 @@ const AboutPage = () => {
               {/* Social Links */}
               <div className="flex gap-4 mt-2">
                 <a
-                  href="https://www.facebook.com/roshan.gupta.273616"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-[#222] hover:bg-[#1877F2] transition-colors duration-300"
-                >
-                  <FaFacebookF className="text-xl text-white" />
-                </a>
-                <a
                   href="https://www.linkedin.com/in/raushan-kumar-gupta-482499148/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -229,6 +221,14 @@ const AboutPage = () => {
                   className="p-2 rounded-full bg-[#222] hover:bg-[#E4405F] transition-colors duration-300"
                 >
                   <FaInstagram className="text-xl text-white" />
+                </a>
+                <a
+                  href="https://www.facebook.com/roshan.gupta.273616"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full bg-[#222] hover:bg-[#1877F2] transition-colors duration-300"
+                >
+                  <FaFacebookF className="text-xl text-white" />
                 </a>
               </div>
 
@@ -369,12 +369,12 @@ const AboutPage = () => {
               {/* Social Links */}
               <div className="flex gap-4 mt-2">
                 <a
-                  href="https://github.com/gprabhat65"
+                  href="https://www.prabhatkumargupta.com.np/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-[#222] hover:bg-[#333] transition-colors duration-300"
+                  className="p-2 rounded-full bg-[#222] hover:bg-[#E4405F] transition-colors duration-300"
                 >
-                  <FaGithub className="text-xl text-white" />
+                  <FaGlobe className="text-xl text-white" /> {/* website icon */}
                 </a>
                 <a
                   href="https://www.linkedin.com/in/prabhat-kumar-gupta-2b5367257/"
@@ -385,6 +385,14 @@ const AboutPage = () => {
                   <FaLinkedinIn className="text-xl text-white" />
                 </a>
                 <a
+                  href="https://x.com/gprabhat650"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full bg-[#222] hover:bg-[#1DA1F2] transition-colors duration-300"
+                >
+                  <FaTwitter className="text-xl text-white" />
+                </a>
+                <a
                   href="https://leetcode.com/u/gprabhat65/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -393,28 +401,20 @@ const AboutPage = () => {
                   <FaCode className="text-xl text-white" /> {/* icon for coding */}
                 </a>
                 <a
-                  href="https://www.prabhatkumargupta.com.np/"
+                  href="https://github.com/gprabhat65"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-[#222] hover:bg-[#E4405F] transition-colors duration-300"
+                  className="p-2 rounded-full bg-[#222] hover:bg-[#333] transition-colors duration-300"
                 >
-                  <FaGlobe className="text-xl text-white" /> {/* website icon */}
+                  <FaGithub className="text-xl text-white" />
                 </a>
-                 <a
+                <a
                   href="https://www.instagram.com/_mr_kalwar/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-full bg-[#222] hover:bg-[#E4405F] transition-colors duration-300"
                 >
                   <FaInstagram className="text-xl text-white" />
-                </a>
-                <a
-                  href="https://x.com/gprabhat650"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-[#222] hover:bg-[#1DA1F2] transition-colors duration-300"
-                >
-                  <FaTwitter className="text-xl text-white" />
                 </a>
                 <a
                   href="https://www.facebook.com/gprabhat65"
@@ -428,7 +428,7 @@ const AboutPage = () => {
 
               <p className="text-base md:text-xl leading-relaxed">
                 Prabhat Kumar Gupta is an aspiring <span className="font-semibold">AI & Data Science Engineer</span> and the Tech Lead at Trip Engineering Pvt. Ltd. 
-                He is currently pursuing his <span className="font-semibold">B.Tech in Artificial Intelligence & Data Science</span> at KPR Institute of Engineering and Technology, Coimbatore. 
+                He has completed his <span className="font-semibold">B.Tech in Artificial Intelligence & Data Science</span> from KPR Institute of Engineering and Technology, Coimbatore, Tamil Nadu, India. 
                 With hands-on expertise in Python, Java, C, TensorFlow, PyTorch, OpenCV, and Generative AI frameworks, he is deeply passionate about creating intelligent and scalable digital solutions.
               </p>
               <p className="text-base md:text-xl leading-relaxed">

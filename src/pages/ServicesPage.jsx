@@ -96,7 +96,7 @@ const workflow = [
 const testimonials = [
   {
     name: "John Doe",
-    company: "TechCorp Pvt. Ltd.",
+    company: "XYZ Pvt. Ltd.",
     location: "Kathmandu, Nepal",
     text: "The integrated MEPF approach drastically improved our project's performance. Highly recommended!",
     img: "https://via.placeholder.com/100",
@@ -104,7 +104,7 @@ const testimonials = [
   },
   {
     name: "Sarah Lee",
-    company: "Buildwell Inc.",
+    company: "XYZ Inc.",
     location: "Lalitpur, Nepal",
     text: "Amazing team with great coordination and timely delivery. Extremely satisfied with the final output!",
     img: "https://via.placeholder.com/100",
@@ -112,7 +112,7 @@ const testimonials = [
   },
   {
     name: "Michael Raj",
-    company: "Global Infra Solutions",
+    company: "XYZ Info Solutions",
     location: "Biratnagar, Nepal",
     text: "Professional, efficient, and experienced team. Their engineering precision is truly exceptional.",
     img: "https://via.placeholder.com/100",
@@ -120,7 +120,7 @@ const testimonials = [
   },
   {
     name: "Priya Sharma",
-    company: "Himalayan Builders",
+    company: "XYZ Builders",
     location: "Pokhara, Nepal",
     text: "Their technical depth and execution quality exceeded expectations. A reliable engineering partner!",
     img: "https://via.placeholder.com/100",
@@ -128,7 +128,7 @@ const testimonials = [
   },
   {
     name: "Piyush Agrawal",
-    company: "TechCorp Pvt. Ltd.",
+    company: "ABC Pvt. Ltd.",
     location: "Kathmandu, Nepal",
     text: "The integrated MEPF approach drastically improved our project's performance. Highly recommended!",
     img: "https://via.placeholder.com/100",
@@ -136,7 +136,7 @@ const testimonials = [
   },
   {
     name: "Bibek Chaudhry",
-    company: "Buildwell Inc.",
+    company: "ABC Inc.",
     location: "Lalitpur, Nepal",
     text: "Amazing team with great coordination and timely delivery. Extremely satisfied with the final output!",
     img: "https://via.placeholder.com/100",
@@ -144,7 +144,7 @@ const testimonials = [
   },
   {
     name: "Prem Sah",
-    company: "Global Infra Solutions",
+    company: "XYZ Infra Solutions",
     location: "Biratnagar, Nepal",
     text: "Professional, efficient, and experienced team. Their engineering precision is truly exceptional.",
     img: "https://via.placeholder.com/100",
@@ -152,7 +152,7 @@ const testimonials = [
   },
   {
     name: "Pransish Kumar",
-    company: "Himalayan Builders",
+    company: "ABC Builders",
     location: "Pokhara, Nepal",
     text: "Their technical depth and execution quality exceeded expectations. A reliable engineering partner!",
     img: "https://via.placeholder.com/100",
@@ -160,7 +160,7 @@ const testimonials = [
   },
   {
     name: "Prabhat Gupta",
-    company: "TechCorp Pvt. Ltd.",
+    company: "MNO Pvt. Ltd.",
     location: "Kathmandu, Nepal",
     text: "The integrated MEPF approach drastically improved our project's performance. Highly recommended!",
     img: "https://via.placeholder.com/100",
@@ -168,7 +168,7 @@ const testimonials = [
   },
   {
     name: "Prakash Chaurasiya",
-    company: "Buildwell Inc.",
+    company: "MNO Inc.",
     location: "Lalitpur, Nepal",
     text: "Amazing team with great coordination and timely delivery. Extremely satisfied with the final output!",
     img: "https://via.placeholder.com/100",
@@ -176,7 +176,7 @@ const testimonials = [
   },
   {
     name: "Kumar Chaudhary",
-    company: "Global Infra Solutions",
+    company: "MNO Infra Solutions",
     location: "Biratnagar, Nepal",
     text: "Professional, efficient, and experienced team. Their engineering precision is truly exceptional.",
     img: "https://via.placeholder.com/100",
@@ -184,7 +184,7 @@ const testimonials = [
   },
   {
     name: "Sagar Chaudhary",
-    company: "Himalayan Builders",
+    company: "MNO Builders",
     location: "Pokhara, Nepal",
     text: "Their technical depth and execution quality exceeded expectations. A reliable engineering partner!",
     img: "https://via.placeholder.com/100",
