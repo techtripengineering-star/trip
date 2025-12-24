@@ -6,12 +6,7 @@ import pupup from "../assets/img/pupup.gif";
 export default function ChatBot() {
   const [visible, setVisible] = useState(false);
   const [open, setOpen] = useState(false);
-  const [messages, setMessages] = useState([
-    {
-      sender: "ai",
-      text: "🙏 Namaste! I am Trip_ty.ai, a virtual assistant from Trip Engineering. How can I help you today?",
-    },
-  ]);
+  const [messages, setMessages] = useState([]); // ⬅️ EMPTY INIT
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
   const [step, setStep] = useState(0);
@@ -32,17 +27,15 @@ export default function ChatBot() {
     return () => clearTimeout(timer);
   }, []);
 
-  /* Auto scroll messages */
+  /* Auto scroll */
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, isTyping]);
 
-  /* Focus input instantly when chat opens */
+  /* Focus input */
   useEffect(() => {
     if (open && inputRef.current) {
-      setTimeout(() => {
-        inputRef.current.focus();
-      }, 50);
+      setTimeout(() => inputRef.current.focus(), 50);
     }
   }, [open]);
 
@@ -64,15 +57,11 @@ export default function ChatBot() {
     if (step === 0) {
       sendBotReply("📝 Please tell me your complete query.");
       setStep(1);
-    }
-
-    else if (step === 1) {
+    } else if (step === 1) {
       setFormData((prev) => ({ ...prev, query: userText }));
       sendBotReply("Got it 👍 Now, may I know your name?");
       setStep(2);
-    }
-
-    else if (step === 2) {
+    } else if (step === 2) {
       if (!/^[A-Za-z\s]+$/.test(userText)) {
         sendBotReply("❌ Please enter a valid name (letters only).");
         setIsTyping(false);
@@ -83,9 +72,7 @@ export default function ChatBot() {
         `Thanks, ${userText}! 📞 Please provide your phone number with country code (e.g., +977-9876543210).`
       );
       setStep(3);
-    }
-
-    else if (step === 3) {
+    } else if (step === 3) {
       if (!/^\+\d{1,3}\d{10}$/.test(userText)) {
         sendBotReply("❌ Invalid phone number. Please include country code.");
         setIsTyping(false);
@@ -94,9 +81,7 @@ export default function ChatBot() {
       setFormData((prev) => ({ ...prev, phone: userText }));
       sendBotReply("Great! 📧 Please provide your email address.");
       setStep(4);
-    }
-
-    else if (step === 4) {
+    } else if (step === 4) {
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(userText)) {
         sendBotReply("❌ Invalid email address. Try again.");
         setIsTyping(false);
@@ -110,34 +95,23 @@ export default function ChatBot() {
         await emailjs.send(
           "service_9skcqe9",
           "template_ok5lrdr",
-          {
-            query: finalData.query,
-            name: finalData.name,
-            phone: finalData.phone,
-            email: finalData.email,
-          },
+          finalData,
           "oTcYvM0U6-N1c0yht"
         );
 
         sendBotReply(
           `✅ Thank you ${finalData.name}! Your query has been sent. Our team will contact you shortly 🙏`
         );
-      } catch (error) {
-        console.error("EmailJS Error:", error);
+      } catch {
         sendBotReply("⚠️ Something went wrong. Please try again later.");
       }
 
       setStep(5);
     }
-
-    else {
-      sendBotReply("🤖 Session completed. Thank you!");
-    }
   };
 
   return (
     <div className="fixed bottom-5 right-5 z-50">
-
       {/* Floating Button */}
       {visible && !open && (
         <button
@@ -151,31 +125,35 @@ export default function ChatBot() {
 
       {/* Chat Window */}
       {open && (
-        <div className="w-[325px] h-[405px] bg-[#FFFDD0] shadow-lg rounded-xl flex flex-col">
-
+        <div className="w-[425px] h-[555px] bg-[#FFFDD0] shadow-lg rounded-xl flex flex-col">
           {/* Header */}
-          <div className="bg-blue-500 opacity-70 text-white p-3 rounded-t-xl flex justify-between items-center">
-            <span>🤖 Trip_ty.AI</span>
-            <button onClick={() => setOpen(false)} className="font-bold">
-              ✕
-            </button>
+          <div className="bg-blue-500 text-white p-3 rounded-t-xl flex justify-between items-center">
+            <span>🤖 Trip.ty Bot</span>
+            <button onClick={() => setOpen(false)}>✕</button>
           </div>
 
-          {/* Messages */}
-          <div className="flex-1 p-3 overflow-y-auto space-y-2">
-            <div className="flex items-center space-x-2">
-              <img src={pupup} alt="AI" className="w-10 h-10 rounded-full border" />
-              <span className="text-sm text-gray-700">
-                Hi, I’m here to help you!
-              </span>
-            </div>
+          {/* Body */}
+          <div className="flex-1 p-4 overflow-y-auto">
+            {/* Welcome Screen */}
+            {messages.length === 0 && (
+              <div className="flex flex-col items-center text-center mt-8 space-y-4">
+                <p className="text-m text-gray-600 italic">
+                  Hey, I'm Trip.ty bot, ready to help.
+                  <br />
+                  What can I do for you today?
+                </p>
 
+                <img src={pupup} alt="AI" className="w-36 h-36" />
+              </div>
+            )}
+
+            {/* Messages */}
             {messages.map((msg, i) => (
               <div
                 key={i}
-                className={`p-2 rounded-md text-sm max-w-[80%] ${
+                className={`mt-2 p-2 rounded-md text-sm max-w-[80%] ${
                   msg.sender === "user"
-                    ? "bg-blue-200 self-end ml-auto text-gray-800"
+                    ? "bg-blue-200 ml-auto text-gray-800"
                     : "bg-white text-gray-800"
                 }`}
               >
@@ -184,8 +162,8 @@ export default function ChatBot() {
             ))}
 
             {isTyping && (
-              <div className="flex items-center space-x-2 text-sm text-gray-600">
-                <span>Trip_ty.AI is typing...</span>
+              <div className="mt-2 text-sm text-gray-500">
+                Trip.ty is typing...
               </div>
             )}
 

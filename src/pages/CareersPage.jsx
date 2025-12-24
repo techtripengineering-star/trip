@@ -5,32 +5,16 @@ import Footer from "../components/Footer";
 import ChatBot from "../components/ChatBot";
 
 const jobs = [
+  // 🌟 Open Role
   {
-    title: "Electrical Draft Person / Electrical Design Engineer",
+    title: "Open Role – Brilliant Minds Welcome",
+    isOpenRole: true,
     requirements: [
-      "Diploma or Bachelor's degree in Electrical Engineering or related field",
-      "Proficiency in AutoCAD and electrical design software",
-      "Strong understanding of electrical drawings, layouts, and load calculations",
-      "Ability to prepare detailed design documents and BOQs",
-      "Prior experience in MEPF or building services projects preferred",
-    ],
-  },
-  {
-    title: "MEP Engineer",
-    requirements: [
-      "Bachelor's degree in Mechanical/Electrical Engineering",
-      "Experience in HVAC, Plumbing, and Electrical systems",
-      "Strong estimation and design capabilities",
-      "Site supervision experience preferred",
-      "Knowledge of relevant building codes and standards",
-    ],
-  },
-  {
-    title: "HVAC Technician",
-    requirements: [
-      "1+ years of experience in HVAC installation and maintenance",
-      "Knowledge of safety and testing procedures",
-      "Ability to support engineers in commissioning and troubleshooting",
+      "Passion for engineering, innovation, and problem-solving",
+      "Strong willingness to learn, adapt, and contribute meaningfully",
+      "Ability to think independently and work collaboratively in a team",
+      "Interest in making real-world impact through engineering solutions",
+      "Freshers, experienced professionals, and cross-domain talent are welcome",
     ],
   },
 ];
@@ -64,7 +48,7 @@ const faqs = [
 ];
 
 const CareersSection = () => {
-  const hrEmail = "tech.tripengineering@gmail.com";
+  const hrEmail = "projects.tripepl@gmail.com";
 
   const handleApply = (jobTitle) => {
     const subject = `Application for ${jobTitle}`;
@@ -98,7 +82,7 @@ Best regards,%0D%0A[Your Name]%0D%0A[Your Contact Info]`;
 
         {/* TITLE */}
         <h1 className="text-4xl font-bold mb-6 text-center">Careers at Trip Engineering</h1>
-        <p className="max-w-3xl mx-auto text-lg text-center mb-12 leading-relaxed">
+        <p className="max-w-5xl mx-auto text-lg text-center mb-12 leading-relaxed">
           Join one of Nepal’s fastest-growing engineering companies delivering electrical, HVAC, and MEP 
           solutions to top government, hospital, commercial, and industrial projects.
         </p>
