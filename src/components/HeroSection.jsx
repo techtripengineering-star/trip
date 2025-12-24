@@ -7,10 +7,10 @@ import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { Link } from "react-router-dom";
 
-import slide1 from "../assets/img/HeroSection1.jpeg";
-import slide2 from "../assets/img/HeroSection2.jpeg";
-import slide3 from "../assets/img/HeroSection3.jpeg";
-import slide4 from "../assets/img/scooter1.png";
+import slide1 from "../assets/img/HeroSection1.webp";
+import slide2 from "../assets/img/HeroSection4.jpeg";
+import slide3 from "../assets/img/HeroSection3.webp";
+import slide4 from "../assets/img/HeroSection4.webp";
 
 // Example hero images
 const aboutHero = slide2;
